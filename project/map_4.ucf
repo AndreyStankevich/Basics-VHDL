@@ -1,0 +1,9 @@
+NET Z1                        		    	         LOC = P33 | IOSTANDARD = "LVCMOS33";        ## LED1
+NET Z2         	              	       		      LOC = P34 | IOSTANDARD = "LVCMOS33";       ## LED2
+
+########KEY Pin define#####################
+NET A1	                        	             	LOC = P16 | IOSTANDARD = "LVCMOS33";       ## KEY1
+NET B1 	                      	        	         LOC = P17 | IOSTANDARD = "LVCMOS33";       ## KEY2
+NET A2                                  		      LOC = P21 | IOSTANDARD = "LVCMOS33";       ## KEY3
+NET B2                                  		      LOC = P22 | IOSTANDARD = "LVCMOS33";       ## KEY4
+NET S                                              LOC = P23 | IOSTANDARD = "LVCMOS33";

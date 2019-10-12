@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "E:/POCP_1.1/pocp_1.xst" -ofn "E:/POCP_1.1/pocp_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 pocp_1.ngc pocp_1.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pocp_1_map.ncd pocp_1.ngd pocp_1.pcf 
+par -w -intstyle ise -ol high -mt off pocp_1_map.ncd pocp_1.ncd pocp_1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pocp_1.twx pocp_1.ncd -o pocp_1.twr pocp_1.pcf 
+xst -intstyle ise -ifn "E:/POCP_1.1/pocp_1.xst" -ofn "E:/POCP_1.1/pocp_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pocp_1.ucf -p xc6slx9-ftg256-3 pocp_1.ngc pocp_1.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pocp_1_map.ncd pocp_1.ngd pocp_1.pcf 
+par -w -intstyle ise -ol high -mt off pocp_1_map.ncd pocp_1.ncd pocp_1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pocp_1.twx pocp_1.ncd -o pocp_1.twr pocp_1.pcf -ucf pocp_1.ucf 
+xst -intstyle ise -ifn "E:/POCP_1.1/pocp_1.xst" -ofn "E:/POCP_1.1/pocp_1.syr" 
+xst -intstyle ise -ifn "E:/POCP_1.1/pocp_1.xst" -ofn "E:/POCP_1.1/pocp_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc map_1.ucf -p xc6slx9-ftg256-3 pocp_1.ngc pocp_1.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pocp_1_map.ncd pocp_1.ngd pocp_1.pcf 
+par -w -intstyle ise -ol high -mt off pocp_1_map.ncd pocp_1.ncd pocp_1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pocp_1.twx pocp_1.ncd -o pocp_1.twr pocp_1.pcf -ucf map_1.ucf 
+bitgen -intstyle ise -f pocp_1.ut pocp_1.ncd 

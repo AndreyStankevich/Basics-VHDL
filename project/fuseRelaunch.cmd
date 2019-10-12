@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/POCP_1.1/pocp_4_isim_beh.exe" -prj "E:/POCP_1.1/pocp_4_beh.prj" "work.pocp_4" 
