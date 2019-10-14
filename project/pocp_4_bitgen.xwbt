@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=E:\POCP_1.1\pocp_4.ncd
-OUTFILE=E:\POCP_1.1\pocp_4.bit
-FAMILY=Spartan6
-PART=xc6slx9-3tqg144
-WORKINGDIR=E:\POCP_1.1
-LICENSE=WebPack
-USER_INFO=__0_0_0
